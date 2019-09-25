@@ -20,7 +20,10 @@ The company wants to create a new system that should provide them information ab
 Sometimes new systems can fail, if this happens the company can be damaged or loose data which will cost money and time. On the other hand, the new system can also be a source of income. For instance, if it’s used efficiently, they can increase the value of their cars. When we decide to use a new system, we should consider all the outcomes for upmost efficiency.  
 
 Design
----------
+--------
+### First sketch of system 
+![SystemDiagram](system.jpg)
+
 
 Development
 --------
