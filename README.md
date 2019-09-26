@@ -23,6 +23,7 @@ Design
 --------
 ### First sketch of system 
 ![SystemDiagram](system.jpg)
+### Flow diagram 
 
 
 Development
@@ -48,6 +49,13 @@ echo "installation complete successfully"
 
 ```
 This script meets the requirement of the client for a simple installation however, it could be simplified so that the user does not need to execute the program by typing ``bash install.sh`` 
+
+### problem solving 
+1 how to detect is a word's lenght is ood or even 
+     if [ $len%2 -eg 0 ]
+     
+2 how to create a unstall program 
+  rm -r App 
 
 Evaluation
 -----------
