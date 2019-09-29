@@ -56,7 +56,9 @@ This script meets the requirement of the client for a simple installation howeve
      
 2 how to create a unstall program 
   rm -r App 
+  
   ![SystemDiagram](system1.jpg)  
+  
   ![SystemDiagram](system2.jpg)
 
 Evaluation
