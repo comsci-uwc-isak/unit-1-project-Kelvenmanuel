@@ -50,6 +50,23 @@ echo "installation complete successfully"
 ```
 This script meets the requirement of the client for a simple installation however, it could be simplified so that the user does not need to execute the program by typing ``bash install.sh`` 
 
+### developing the action create new car 
+This process involves the inputs _,_,_,_, and the outputs: 
+the following steps describe the algorithm 
+1 Get the inpusts as the argument '$1 $2 $3 $4'
+2 check number of arguments. In bash this case can be done as 'if [ $# -eq 4 ]'
+3 store new car inside maincarFile.txt 
+4 create file for recording trips as plate.txt
+
+### developing records of the news cars 
+this program involves the inputs _,_,_,_, and the outputs:
+the following steps describe the algorithm 
+1 get the arguments $1 $2 and chec them 
+2 check if the car exist, if the file exist in the bash 
+3 add a new line to the file license.txt 
+
+
+
 ### problem solving 
 1 how to detect is a word's lenght is ood or even 
      if [ $len%2 -eg 0 ]
@@ -63,6 +80,8 @@ This script meets the requirement of the client for a simple installation howeve
 
 Evaluation
 -----------
+
+
 
 
 
