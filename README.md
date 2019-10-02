@@ -17,7 +17,26 @@ Planning
 ### Definition of the problem 
 The company wants to create a new system that should provide them information about the car, how many kms the cars run, record, summary and history of their cars. This system should be better than the last one or a new one that come to improve the company and make the process easier for their workers. However, there are many factors that influence the system or the decision to use it.
 	
-Sometimes new systems can fail, if this happens the company can be damaged or loose data which will cost money and time. On the other hand, the new system can also be a source of income. For instance, if it’s used efficiently, they can increase the value of their cars. When we decide to use a new system, we should consider all the outcomes for upmost efficiency.  
+Sometimes new systems can fail, if this happens the company can be damaged or loose data which will cost money and time. On the other hand, the new system can also be a source of income. For instance, if it’s used efficiently, they can increase the value of their cars. When we decide to use a new system, we should consider all the outcomes for upmost efficiency. 
+
+### definition of the problem 
+A RENTALCAR company need a program to record the trips, give summary of the car, in other words, a program that a user can use and create, edit and delete cars or keep informatiom of the cars that belong to their company.
+
+### proposed solution
+we propose a new program in bash, inside terminal, a easy program to handle and it is in all computers , inside this program we can create new cars,record trips, give the summary and information about the car, the user should be able to handle the program we provide information to user achieve this and solve all issues that he face without this program.
+
+
+### success criteria 
+these outcomes that can be measured 
+1. A car can be created 
+1. A trip can be recored for a given car 
+1. A summary ( total distance travel, averege)
+1. A car information can be edited 
+1. A basic working backup system is available 
+1. the user can easily ( name notation, documentation)
+1. Installation is **simple**, it does not require additional software, one step process 
+1. A car information can be deleted 
+1. the application can be uninstalled 
 
 Design
 --------
