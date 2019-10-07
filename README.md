@@ -112,5 +112,15 @@ Evaluation
 Test 1: a car can be created and stored in the dabase 
 For this purpose we will create the file testCreate.sh. this is called software testing 
 
+the first step is to check for this file 
+```.sh 
+cd ../scripts/ 
+if [ -f "create.sh" ]; then 
+          echo "file exist, test will start now"
+else 
+          echo "file create.sh does not exist, test failed 
+fi 
+```
+here the option -f in the if condition checks for a file in the wor
 
-
+this corresponds to Dynamic testing instead of static, alpha testing, white-box and automated testing 
