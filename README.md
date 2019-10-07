@@ -109,8 +109,8 @@ the following steps describe the algorithm
 
 Evaluation
 -----------
-
-
+Test 1: a car can be created and stored in the dabase 
+For this purpose we will create the file testCreate.sh. this is called software testing 
 
 
 
