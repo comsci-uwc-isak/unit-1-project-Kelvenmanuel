@@ -84,6 +84,16 @@ the following steps describe the algorithm
 2 check if the car exist, if the file exist in the bash 
 3 add a new line to the file license.txt 
 
+### developing dekete of the new cars 
+this program involve inputs _,_,_,_,
+the following steps describe the algorithm 
+1-- get input ( #licence )
+2-- flow diagram : if [ $# -ne 1], then rm -rf
+2.1-- check if the car exist 
+2.2-- if the car doesn’t exist then show a message to user to put the right arg or lic
+3-- delete a new car inside maincarfile 
+
+4--END 
 
 
 ### problem solving 
