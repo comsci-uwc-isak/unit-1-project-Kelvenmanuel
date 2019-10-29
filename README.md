@@ -107,6 +107,11 @@ the following steps describe the algorithm
   
   ![SystemDiagram](system2.jpg)
 
+### Developping user help files 
+
+- link to man webpage https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/ this give more information about man protocal 
+- we are using man page protoical to provide help to the users, a manuel of all the commands that we can use in the terminal, this show to user the commands which includes NAME, SYNOPSIS, DESCRIPTIONS, OPTIONS, EXIT STATUS, ERRORS, FILES, EXAMPLES, AUTHORS.( adapted from GeeksforGeeks.com)
+
 Evaluation
 -----------
 Test 1: a car can be created and stored in the dabase 
