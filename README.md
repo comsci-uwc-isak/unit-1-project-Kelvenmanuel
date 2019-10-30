@@ -44,6 +44,7 @@ Design
 ![SystemDiagram](system.jpg)
 ### Flow diagram 
 
+### Table/flow chart for test plan 
 
 Development
 --------
@@ -144,10 +145,13 @@ YES
 5. A basic working backup system is available 
 YES
 6. the user can easily ( name notation, documentation)
-
+YES
 7. Installation is **simple**, it does not require additional software, one step process 
 YES
 8. A car information can be deleted 
 YES 
 9. the application can be uninstalled 
+YES 
+
+
 
