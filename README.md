@@ -85,7 +85,7 @@ the following steps describe the algorithm
 2 check if the car exist, if the file exist in the bash 
 3 add a new line to the file license.txt 
 
-### developing dekete of the new cars 
+### developing delete of the new cars 
 this program involve inputs _,_,_,_,
 the following steps describe the algorithm 
 1-- get input ( #licence )
@@ -153,5 +153,6 @@ YES
 9. the application can be uninstalled 
 YES 
 
+###what we can do to improve this program 
 
 
