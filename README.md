@@ -112,8 +112,6 @@ the following steps describe the algorithm
 - link to man webpage https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/ this give more information about man protocal 
 - we are using man page protoical to provide help to the users, a manuel of all the commands that we can use in the terminal, this show to user the commands which includes NAME, SYNOPSIS, DESCRIPTIONS, OPTIONS, EXIT STATUS, ERRORS, FILES, EXAMPLES, AUTHORS.( adapted from GeeksforGeeks.com)
 
-Evaluation
------------
 Test 1: a car can be created and stored in the dabase 
 For this purpose we will create the file testCreate.sh. this is called software testing 
 
@@ -129,3 +127,27 @@ fi
 here the option -f in the if condition checks for a file in the wor
 
 this corresponds to Dynamic testing instead of static, alpha testing, white-box and automated testing 
+
+
+Evaluation
+-----------
+
+these outcomes that can be measured 
+1. A car can be created 
+YES 
+2. A trip can be recored for a given car
+YES
+3. A summary ( total distance travel, averege)
+YES
+4. A car information can be edited 
+YES
+5. A basic working backup system is available 
+YES
+6. the user can easily ( name notation, documentation)
+
+7. Installation is **simple**, it does not require additional software, one step process 
+YES
+8. A car information can be deleted 
+YES 
+9. the application can be uninstalled 
+
