@@ -70,6 +70,8 @@ echo "installation complete successfully"
 ```
 This script meets the requirement of the client for a simple installation however, it could be simplified so that the user does not need to execute the program by typing ``bash install.sh`` 
 
+### developind install for the rental car application 
+
 ### developing the action create new car 
 This process involves the inputs _,_,_,_, and the outputs: 
 the following steps describe the algorithm 
@@ -93,6 +95,26 @@ the following steps describe the algorithm
 2.1-- check if the car exist 
 2.2-- if the car doesn’t exist then show a message to user to put the right arg or lic
 3-- delete a new car inside maincarfile 
+
+### developing summary of the new car 
+this program involve inputs_,_,_,_,
+the following steps describe the algorithm 
+1-- get inputs ( #license )
+2-- flow diagram: if [ $# -ne 1] 
+3-- check if the car exist 
+4-- if the car doesn’t exist then show a message to user to put the right arg or lic
+5-- after the user enter the right license the program will show the summary of the car that the user write 
+
+### developing backup of the cars 
+this program involve inputs_,_,_,_,
+
+### developing uninstall of new cars 
+this program involve inputs_,_,_,_,
+
+### developing Edit of new cars 
+this program involve inputs_,_,_,_,
+the following steps describe the algorithm 
+1-- get inputs ( #license #model #red #pp )  
 
 4--END 
 
