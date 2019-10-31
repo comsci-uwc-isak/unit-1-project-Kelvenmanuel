@@ -5,7 +5,7 @@
 
 if [ $# -ne 4 ]; then
   echo "Error with the number of arguments"
-  echo "Enter License Maker Model Passengers"
+  echo "Enter new License Maker Model Passengers"
   exit
 fi
 
