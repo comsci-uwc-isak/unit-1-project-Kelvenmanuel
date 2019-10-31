@@ -70,8 +70,6 @@ echo "installation complete successfully"
 ```
 This script meets the requirement of the client for a simple installation however, it could be simplified so that the user does not need to execute the program by typing ``bash install.sh`` 
 
-### developind install for the rental car application 
-
 ### developing the action create new car 
 This process involves the inputs _,_,_,_, and the outputs: 
 the following steps describe the algorithm 
@@ -108,8 +106,22 @@ the following steps describe the algorithm
 ### developing backup of the cars 
 this program involve inputs_,_,_,_,
 
-### developing uninstall of new cars 
-this program involve inputs_,_,_,_,
+
+### Script for uninstallation 
+#!/bin/bash
+
+#this program will delete the created folders for the minimal rental app
+
+echo "Starting to uninstall"
+echo "uninstalling in the desktop (default). press enter"
+read
+cd ~/Desktop
+
+rm -r RentalCarApp
+
+
+echo "uninstallation complete successfully
+
 
 ### developing Edit of new cars 
 this program involve inputs_,_,_,_,
