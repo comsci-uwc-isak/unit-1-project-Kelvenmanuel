@@ -107,7 +107,8 @@ the following steps describe the algorithm
 this program involve inputs_,_,_,_,
 
 
-### Script for uninstallation 
+### Script for uninstallation
+```.sh
 #!/bin/bash
 
 #this program will delete the created folders for the minimal rental app
