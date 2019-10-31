@@ -1,29 +1,26 @@
 #!/bin/bash
-#this is an example script that solves the smaller
-#problems for the actions summary
-#1. read a txt file line by line
-#2. split a line by spaces
-#3. add the firts word in the line
+#This program summarizes the total distance traveled by a car.
 
-if [ $# -ne 1 ]; then
-        echo "Error with the name of arguments"
-        echo "Enter license"
-        exit
-fi
-lic=$1
-FILE="../Database/$lic.txt"
-totalkm=0
+total=0
+
+#Read through the car's file
+FILE="../Database/$1.txt"
 while read line
 do
-    echo $line
-    #bash splits a line by spaces
-    for km in $line
-    do
-      echo $km
-      #add all the km
-      ((totalkm=$km+$totalkm))
-      break
-    done
+  #Bash splits a line by spaces
+  for word in $line
+  do
+    km=$word
+#Calculate the total distance traveled
+    (( total=$total + $km ))
+    break
+  done
 done < $FILE
-#4. show very nicely the total km traveled
-bash frame1 "total km traveled $totalkm"
+
+#Print the car's file
+echo "Trips:"
+cd ../Database/
+cat $1.txt
+
+#Print the car's total distance travelled
+echo "Total distance travelled:" $total "km"
