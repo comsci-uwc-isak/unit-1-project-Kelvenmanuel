@@ -77,14 +77,57 @@ the following steps describe the algorithm
 2 check number of arguments. In bash this case can be done as 'if [ $# -eq 4 ]'
 3 store new car inside maincarFile.txt 
 4 create file for recording trips as plate.txt
+```sh
+#!/bin/bash 
 
+#this program creates a car given four arguments 
+#licence maker model passangers 
+
+if [ $# -ne 4 ]; then 
+        echo "Error with the number of arguments"
+	echo "Enter license maker model passengers"
+	exit 
+fi
+
+#number of arguments is correct, continue 
+license=$1
+maker=$2
+model=$3 
+pp=$$
+
+#this create a new line in the file maincarfile.txt inside CarRentalApp
+echo "$license $maker $model $pp" >> db/maincarfile.txt 
+echo "" > $license.txt 
+
+bash frame1 "New car created successfully"
+
+```
 ### developing records of the news cars 
 this program involves the inputs _,_,_,_, and the outputs:
 the following steps describe the algorithm 
 1 get the arguments $1 $2 and chec them 
 2 check if the car exist, if the file exist in the bash 
 3 add a new line to the file license.txt 
+```sh
+#!/bin/bash 
 
+#this programs record a trip in the file of a car provided 
+if [ $# -ne 2 ]; then 
+         echo " error with the number of arguments"
+	 echo "enter license distance"
+	 exit 
+fi 
+km=$2 
+license=$1 
+#check if the file exist 
+if [ ! -f "$license.txt" ]; then 
+	 echo "car does not exist"
+	 exit 
+fi
+echo "$km" >> $license.txt
+bash frame1 "trip recorded successfully"
+
+```
 ### developing delete of the new cars 
 this program involve inputs _,_,_,_,
 the following steps describe the algorithm 
@@ -93,7 +136,27 @@ the following steps describe the algorithm
 2.1-- check if the car exist 
 2.2-- if the car doesn’t exist then show a message to user to put the right arg or lic
 3-- delete a new car inside maincarfile 
+```sh
+#!/bin/bash 
 
+#this program delete a car given one argument
+#licences 
+
+if [ $# -ne 1 ]; then rm -rf 
+	echo "error with the number of arguments"
+	echo " enter license"
+	exit 
+fi 
+
+#number of the arguments is correct, continue 
+license=$1
+
+#this delete an existing file maincarfile.txt inside CarRentalApp 
+echo "$license" > db/maincarfile.txt
+
+bash frame1 "car deleted successufully"
+
+```
 ### developing summary of the new car 
 this program involve inputs_,_,_,_,
 the following steps describe the algorithm 
@@ -102,11 +165,88 @@ the following steps describe the algorithm
 3-- check if the car exist 
 4-- if the car doesn’t exist then show a message to user to put the right arg or lic
 5-- after the user enter the right license the program will show the summary of the car that the user write 
+```sh
+#!/bin/bash
+#this is an example script that solves the smaller
+#problems for the actions summary
+#1. read a txt file line by line
+#2. split a line by spaces
+#3. add the firts word in the line
 
+if [ $# -ne 1 ]; then
+        echo "Error with the name of arguments"
+        echo "Enter license"
+        exit
+fi
+lic=$1
+FILE="../Database/$lic.txt"
+totalkm=0
+while read line
+do
+    echo $line
+    #bash splits a line by spaces
+    for km in $line
+    do
+      echo $km
+      #add all the km
+      ((totalkm=$km+$totalkm))
+      break
+    done
+done < $FILE
+#4. show very nicely the total km traveled
+bash frame1 "total km traveled $totalkm"
+
+```
 ### developing backup of the cars 
-this program involve inputs_,_,_,_,
+```sh
+#!/bin/bash
+
+# This program creates a backup of the database folder in the app folder
+# Either backs up to the desktop, or to an USB stick
+
+# Starting
+echo "Backup starting"
+
+##### Save to the desktop
+# Navigate to the desktop to create a new folder (backup/)
+cd ~/desktop/
+# If theres already a folder called "backup", it is removed
+rm -r backup
+mkdir backup
+# Creats subfolder (backup/dataBase/)
+cd backup
+mkdir dataBase
+
+# Copies all (*) the files from the dataBase folder 
+# to the new folder (backup/) and subfolder (backup/dataBase/)
+cp ~/desktop/RentalCarApp/dataBase/* ~/desktop/backup/dataBase/
+
+### NOT NECESSARY, ONLY FOR AESTHETIC PURPOSES
+# Prints the frame
+# Navigates to the folder of the frame.sh script
+cd ~/Desktop/RentalCarApp/scripts/
+bash frame.sh "Installation complete"
 
 
+##### Save to a usb stick
+# MULTILINE COMMENT
+: '
+echo -n "What is your USB stick called? "
+read usbName
+
+cd /Volumes/%usbName/
+# If theres already a folder called "backup", it is removed
+rm -r backup
+mkdir backup
+# Creats subfolder (backup/dataBase/)
+cd backup
+mkdir dataBase
+
+# Copy files to USB stick
+cp ~/desktop/RentalCarApp/dataBase/* /Volumes/$usbName/backup/dataBase/
+
+' # MULTILINE COMMENT
+```
 ### Script for uninstallation
 ```.sh
 #!/bin/bash
@@ -122,16 +262,42 @@ rm -r RentalCarApp
 
 
 echo "uninstallation complete successfully
-
+```
 
 ### developing Edit of new cars 
 this program involve inputs_,_,_,_,
 the following steps describe the algorithm 
 1-- get inputs ( #license #model #red #pp )  
+```sh
+#!/bin/bash
+#This program edit the information of an exiting car in the
+#maincarfile
+#user enters [license place] [model] [red] [pp]
 
-4--END 
+if [ $# -ne 4 ]; then
+  echo "Error with the number of arguments"
+  echo "Enter License Maker Model Passengers"
+  exit
+fi
 
+license=$1
+maker=$2
+model=$3
+pp=$4
 
+cd ../Database
+
+if [ ! -f "$license.txt" ]; then
+  echo "File not found!"
+fi
+
+#find the line with the given car plate and delete it
+sed -i '' "/^$license/d" maincarfile.txt
+#add the new information
+echo "$license $maker $model $pp" >> maincarfile.txt
+cd ../scripts
+bash frame2 "Car edited successfully"
+```
 ### problem solving 
 1 how to detect is a word's lenght is ood or even 
      if [ $len%2 -eg 0 ]
