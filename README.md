@@ -356,3 +356,4 @@ YES
 
 ### what we can do to improve this program?
 ### A:
+To improve this program we can create a program that translate the program to, at least, 5 more language therefore we can expand more our program and we should create more programs that give to us more information about the car if there is any damage or something wrong with any of them.
