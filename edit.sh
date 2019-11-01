@@ -5,7 +5,7 @@
 
 if [ $# -ne 4 ]; then
   echo "Error with the number of arguments"
-  echo "Enter new License Maker Model Passengers"
+  echo "Enter License Maker Model Passengers"
   exit
 fi
 
@@ -14,7 +14,7 @@ maker=$2
 model=$3
 pp=$4
 
-cd ../Database
+cd ../Database 
 
 if [ ! -f "$license.txt" ]; then
   echo "File not found!"
@@ -26,4 +26,5 @@ sed -i '' "/^$license/d" maincarfile.txt
 echo "$license $maker $model $pp" >> maincarfile.txt
 cd ../scripts
 bash frame1.sh "Car edited successfully"
+
 

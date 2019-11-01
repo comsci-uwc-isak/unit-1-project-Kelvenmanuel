@@ -1,0 +1,20 @@
+#!/bin/bash 
+
+#this program delete a car given one argument
+#licences 
+cd ../Database
+if [ $# -ne 1 ]; then rm -rf 
+	echo "error with the number of arguments"
+	echo " enter license"
+	exit 
+fi 
+cd ../scripts
+#number of the arguments is correct, continue 
+license=$1
+
+#this delete an existing file maincarfile.txt inside CarRentalApp 
+echo "$license" > ../Database/maincarfile.txt
+echo "" > ../database/$license.txt
+
+bash frame1.sh "car deleted successufully"
+
