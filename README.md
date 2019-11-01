@@ -140,25 +140,25 @@ the following steps describe the algorithm
 2.2-- if the car doesn’t exist then show a message to user to put the right arg or lic
 3-- delete a new car inside maincarfile 
 ```sh
-#!/bin/bash 
+#!/bin/bash
 
 #this program delete a car given one argument
-#licences 
-
-if [ $# -ne 1 ]; then rm -rf 
-	echo "error with the number of arguments"
-	echo " enter license"
-	exit 
-fi 
-
-#number of the arguments is correct, continue 
+#licences
+cd ../Database
+if [ $# -ne 1 ]; then rm -rf
+        echo "error with the number of arguments"
+        echo " enter license"
+        exit
+fi
+cd ../scripts
+#number of the arguments is correct, continue
 license=$1
 
-#this delete an existing file maincarfile.txt inside CarRentalApp 
-echo "$license" > db/maincarfile.txt
+#this delete an existing file maincarfile.txt inside CarRentalApp
+echo "$license" > ../Database/maincarfile.txt
+echo "" > ../database/$license.txt
 
 bash frame1 "car deleted successufully"
-
 ```
 ### developing summary of the new car 
 this program involve inputs_,_,_,_,
