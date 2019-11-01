@@ -78,26 +78,26 @@ the following steps describe the algorithm
 3 store new car inside maincarFile.txt 
 4 create file for recording trips as plate.txt
 ```sh
-#!/bin/bash 
+#!/bin/bash
 
-#this program creates a car given four arguments 
-#licence maker model passangers 
+#this program creates a car given four arguments
+#licence maker model passangers
 
-if [ $# -ne 4 ]; then 
+if [ $# -ne 4 ]; then
         echo "Error with the number of arguments"
-	echo "Enter license maker model passengers"
-	exit 
+        echo "Enter license maker model passengers"
+        exit
 fi
 
-#number of arguments is correct, continue 
+#number of arguments is correct, continue
 license=$1
 maker=$2
-model=$3 
+model=$3
 pp=$$
 
 #this create a new line in the file maincarfile.txt inside CarRentalApp
-echo "$license $maker $model $pp" >> db/maincarfile.txt 
-echo "" > $license.txt 
+echo "$license $maker $model $pp" >> ../Database/maincarfile.txt
+echo "" > ../Database/$license.txt
 
 bash frame1 "New car created successfully"
 
@@ -109,22 +109,25 @@ the following steps describe the algorithm
 2 check if the car exist, if the file exist in the bash 
 3 add a new line to the file license.txt 
 ```sh
-#!/bin/bash 
+#!/bin/bash
 
-#this programs record a trip in the file of a car provided 
-if [ $# -ne 2 ]; then 
+#this programs record a trip in the file of a car provided
+if [ $# -ne 2 ]; then
          echo " error with the number of arguments"
-	 echo "enter license distance"
-	 exit 
-fi 
-km=$2 
-license=$1 
-#check if the file exist 
-if [ ! -f "$license.txt" ]; then 
-	 echo "car does not exist"
-	 exit 
+         echo "enter license distance"
+         exit
 fi
-echo "$km" >> $license.txt
+km=$2
+license=$1
+#check if the file exist
+cd ../Database
+if [ ! -f "$license.txt" ]; then
+         echo "car does not exist"
+         exit
+fi
+cd ../scripts
+echo "$license $km" >> ../Database/maincarfile.txt
+echo "$km" >> ../Database/$license.txt
 bash frame1 "trip recorded successfully"
 
 ```
