@@ -99,7 +99,7 @@ pp=$$
 echo "$license $maker $model $pp" >> ../Database/maincarfile.txt
 echo "" > ../Database/$license.txt
 
-bash frame1 "New car created successfully"
+bash frame1.sh "New car created successfully"
 
 ```
 ### developing records of the news cars 
@@ -128,7 +128,7 @@ fi
 cd ../scripts
 echo "$license $km" >> ../Database/maincarfile.txt
 echo "$km" >> ../Database/$license.txt
-bash frame1 "trip recorded successfully"
+bash frame1.sh "trip recorded successfully"
 
 ```
 ### developing delete of the new cars 
@@ -158,7 +158,7 @@ license=$1
 echo "$license" > ../Database/maincarfile.txt
 echo "" > ../database/$license.txt
 
-bash frame1 "car deleted successufully"
+bash frame1.sh "car deleted successufully"
 ```
 ### developing summary of the new car 
 this program involve inputs_,_,_,_,
@@ -295,7 +295,7 @@ sed -i '' "/^$license/d" maincarfile.txt
 #add the new information
 echo "$license $maker $model $pp" >> maincarfile.txt
 cd ../scripts
-bash frame2 "Car edited successfully"
+bash frame1.sh "Car edited successfully"
 ```
 ### problem solving 
 1 how to detect is a word's lenght is ood or even 
