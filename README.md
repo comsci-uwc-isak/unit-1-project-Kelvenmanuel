@@ -212,19 +212,19 @@ cd ~/desktop/
 # If theres already a folder called "backup", it is removed
 rm -r backup
 mkdir backup
-# Creats subfolder (backup/dataBase/)
+# Creats subfolder (backup/Database/)
 cd backup
-mkdir dataBase
+mkdir Database
 
-# Copies all (*) the files from the dataBase folder 
-# to the new folder (backup/) and subfolder (backup/dataBase/)
-cp ~/desktop/RentalCarApp/dataBase/* ~/desktop/backup/dataBase/
+# Copies all (*) the files from the Database folder
+# to the new folder (backup/) and subfolder (backup/Database/)
+cp ~/desktop/CarRentalApp/Database/* ~/desktop/backup/Database/
 
 ### NOT NECESSARY, ONLY FOR AESTHETIC PURPOSES
-# Prints the frame
-# Navigates to the folder of the frame.sh script
-cd ~/Desktop/RentalCarApp/scripts/
-bash frame.sh "Installation complete"
+# Prints the car's file
+# Navigates to the folder of the frame1.sh script
+cd ~/Desktop/CarRentalApp/scripts/
+echo  "Installation complete"
 
 
 ##### Save to a usb stick
@@ -237,12 +237,12 @@ cd /Volumes/%usbName/
 # If theres already a folder called "backup", it is removed
 rm -r backup
 mkdir backup
-# Creats subfolder (backup/dataBase/)
+# Creats subfolder (backup/Database/)
 cd backup
-mkdir dataBase
+mkdir Database
 
 # Copy files to USB stick
-cp ~/desktop/RentalCarApp/dataBase/* /Volumes/$usbName/backup/dataBase/
+cp ~/desktop/CarRentalApp/Database/* /Volumes/$usbName/backup/Database/
 
 ' # MULTILINE COMMENT
 ```
