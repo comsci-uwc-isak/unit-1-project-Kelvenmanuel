@@ -1,4 +1,10 @@
 ![CarRental](logo.png)
+```.py
+Marks=22
+Demo=4
+Total=(Marks+Demo)=26
+```
+**Graded on Nov 8**
 
 Car Rental Minimal App
 ===========================
@@ -38,6 +44,18 @@ these outcomes that can be measured
 1. A car information can be deleted 
 1. the application can be uninstalled 
 
+**Criterion A**
+
+|Level|Descriptor|
+|----|-----|
+|5|The client in the car rental office is identified and his situation described. The rationale for choosing the proposed product (Computer tools used) is justified and includes a range of appropriate criteria for evaluating the success of the product.|
+```.sh
+Rational
+* Great job with this criterion. You could improve the definition of the problem by answering the questions: Who is the client? Why is the product being developed?
+* You are missing marks because the justification for the tools used: Bash, GIT, is not sufficient.
+* One more justificaiton for using BASH is that we were learning it. 
+```
+
 Design
 --------
 ### First sketch of system 
@@ -46,6 +64,16 @@ Design
 
 ### Table/flow chart for test plan 
 ![SystemDiagram](system123.jpg)
+
+## Criterion B
+|**level**|**Description**|
+|-----|------------|
+|8|An outline test plan is included but partially complete. A system diagram and some flow diagrams for algorithms in the product are included. They provide a basic understanding of how the product was developed.|
+```.sh
+Rationale
+*Good job with the system diagram. You can use the figure as a reference point and refeer to it with Fig. 1. For example: "As shown in Fig. 1, the computational system consists of ..." This is necessary to be concrete about the reason from including the picture.
+* Good job with the two flow diagrams. Here you did not get all the full marks because you are missing the description. Remember, an image without description is an unbiguous tool. Add a paragraph explaining what YOU see in the image and the reason why you included. This will help the reader follow your ideas. 
+```
 
 Development
 --------
@@ -330,6 +358,16 @@ here the option -f in the if condition checks for a file in the wor
 
 this corresponds to Dynamic testing instead of static, alpha testing, white-box and automated testing 
 
+## Criterion C
+|**level**|**Description**|
+|-----|------------|
+|5|The proposed solution is characterized by the appropriate use of existing tools. The techniques are adequate for the task and their use is explained. All sources are identified.|
+```.sh
+Rationale
+* You also need description here about the important parts of the code, such as things you learned for the first time, issues and solutions.
+* Try to use the references in body of the document in the place where you use the information, for example, when researching solutions to the problems you faced," As presented in [1], bash can be frustrating..."
+```
+
 
 Evaluation
 -----------
@@ -357,3 +395,13 @@ YES
 ### what we can do to improve this program?
 ### A:
 To improve this program we can create a program that translate the program to, at least, 5 more language therefore we can expand more our program and we should create more programs that give to us more information about the car if there is any damage or something wrong with any of them.
+
+## Criterion D
+|**level**|**Description**|
+|-----|------------|
+|4|The product is fully evaluated against the success criteria identified in criterion A. Recommendations for further improvement of the product are realistic.|
+```.sh
+Rationale
+* The Improvement is realistic but not relevant. 
+*The evidence for the achievement of the criteria is limited so you lost some marks here. Next time, try to expand of the reasons/evidence that allows you to say that you have met the success criteria.
+```
